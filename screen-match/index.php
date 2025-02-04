@@ -6,9 +6,9 @@ require __DIR__ . "/src/Modelo/Filme.php";
 echo "\nBem vindo(a)\n";
 
 $filme = new Filme ();
-$filme -> nome = 'gente grande';
-$filme -> anoLancamento = 2022;
-$filme -> genero = 'comedia';
+$filme -> settAnoLancamento (2022);
+$filme -> settNome ('gente grande');
+$filme -> settGenero ('terror');
 
 $filme -> avalia (7.9);
 $filme -> avalia (4.9);
@@ -17,7 +17,8 @@ $filme -> avalia (9);
 
 var_dump($filme);
 
-echo $filme -> media();
+echo " esse e o ano laçamento: " . $filme -> getanoLancamento();
+echo "\n esse é o nome do filme: " . $filme -> getNome();
+echo "\n esse é o genero: " . $filme -> getGenero();
 
-echo "adeus";
 ?>

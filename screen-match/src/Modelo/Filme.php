@@ -2,22 +2,61 @@
 
 class Filme {
 
-public string $nome;
-public int $anoLancamento;
-public string $genero;
-public array $notas = [];
+private string $nome = 'nome padrao';
+private int $anoLancamento = 2025;
+private string $genero = 'comedia';
+private array $notas = [];
+private float $media = 0;
+private bool $atualizaMedia = false;
 
 function avalia(float $nota): void
 {
      $this ->notas[] = $nota;
+     $this ->atualizaMedia= true;
 }
 
 function media ():float
 {
-$somaNotas = array_sum ($this->notas);
-$quantidadeNotas = count($this->notas);
+    if($this->atualizaMedia){
+        $somaNotas = array_sum ($this->notas);
+        $quantidadeNotas = count($this->notas);
 
-    return $somaNotas / $quantidadeNotas;
+        $this->media =  $somaNotas / $quantidadeNotas;
+        $this->atualizaMedia= false;
+    }
+    return $this->media;
+
+}
+
+public function getanoLancamento(): int
+{
+    return $this -> anoLancamento;
+}
+
+public function settAnoLancamento(int $anoLancamento): void
+    {
+        $this->anoLancamento = $anoLancamento;
+    }
+
+public function getNome():string
+    {
+        return $this -> nome;
+    }
+
+
+public function settnome(string $nome):void
+{
+    $this -> nome = $nome;
+}
+
+public function getGenero():string
+{
+    return $this -> genero;
+}
+
+public function settGenero():void
+{
+    $this -> genero = $genero;
 }
 
 }
