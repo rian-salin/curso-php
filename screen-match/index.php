@@ -18,4 +18,6 @@ $filme -> avalia (9);
 var_dump($filme);
 
 echo $filme -> media();
+
+echo "adeus";
 ?>
