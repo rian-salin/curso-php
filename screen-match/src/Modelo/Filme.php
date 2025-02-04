@@ -4,7 +4,7 @@ class Filme {
 
 private string $nome = 'nome padrao';
 private int $anoLancamento = 2025;
-private string $genero = 'comedia';
+private string $genero = 'ação';
 private array $notas = [];
 private float $media = 0;
 private bool $atualizaMedia = false;
@@ -54,7 +54,7 @@ public function getGenero():string
     return $this -> genero;
 }
 
-public function settGenero():void
+public function settGenero(string $genero):void
 {
     $this -> genero = $genero;
 }
