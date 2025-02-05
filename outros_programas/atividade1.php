@@ -56,13 +56,13 @@ $conta = new Conta();
 $valorAsacar = 500;
 $valorDepositar = 1000;
 
-echo"\n valor no banco: " . $conta -> getSaldoEmCentavos();
+echo"\n valor no banco: $" . $conta -> getSaldoEmCentavos();
 
 $conta->sacar($valorAsacar);
-echo "\n valor do saque $valorAsacar, saldo atual: " . $conta -> getSaldoEmCentavos();
+echo "\n valor do saque $$valorAsacar, saldo atual: $" . $conta -> getSaldoEmCentavos();
 
 $conta->depositar($valorDepositar);
-echo"\n valor a depositar $$valorDepositar, saldo atual: " . $conta->getSaldoEmCentavos();
+echo"\n valor a depositar $$valorDepositar, saldo atual: $" . $conta->getSaldoEmCentavos();
 
 
 
