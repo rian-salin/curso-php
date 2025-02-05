@@ -2,9 +2,9 @@
 
 class Filme {
 
-private string $nome = 'nome padrao';
-private int $anoLancamento = 2025;
-private string $genero = 'ação';
+public string $nome = 'nome padrao';
+public int $anoLancamento = 2025;
+public string $genero = 'ação';
 private array $notas = [];
 private float $media = 0;
 private bool $atualizaMedia = false;

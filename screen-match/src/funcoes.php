@@ -18,9 +18,9 @@ function criaFilme(string $nome, int $anoLancamento, float $nota, string $genero
 {
     $filme = new Filme();
 
-    $filme -> nome = $nome;
-    $filme -> anoLancamento = $anoLancamento;
-    $filme -> genero = $genero;
+    $filme->nome = $nome;
+    $filme->anoLancamento = $anoLancamento;
+    $filme->genero = $genero;
    
 
     return $filme;
