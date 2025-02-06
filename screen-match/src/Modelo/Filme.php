@@ -3,9 +3,9 @@
 class Filme {
 
     public function __construct(
-        private readonly string $nome,
-        private  readonly int $anoLancamento,
-        private readonly string $genero,
+        public readonly string $nome,
+        public  readonly int $anoLancamento,
+        public readonly string $genero,
         private array $notas = [],
         private float $media = 0,
         private bool $atualizaMedia = true
