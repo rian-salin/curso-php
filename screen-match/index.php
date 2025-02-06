@@ -16,8 +16,8 @@ var_dump($filme1);
 
 echo "\n media filme: " . $filme1-> media() . "\n";
 
-echo " esse e o ano laçamento: " . $filme1 -> getanoLancamento();
-echo "\n esse é o nome do filme: " . $filme1-> getNome();
-echo "\n esse é o genero: " . $filme1-> getGenero();
+echo " esse e o ano laçamento: " . $filme1 -> anoLancamento;
+echo "\n esse é o nome do filme: " . $filme1-> nome;
+echo "\n esse é o genero: " . $filme1-> genero;
 
 ?>
