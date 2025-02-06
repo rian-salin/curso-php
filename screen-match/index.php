@@ -5,22 +5,19 @@ require __DIR__ . "/src/Modelo/Filme.php";
 
 echo "\nBem vindo(a)\n";
 
-$filme = new Filme ();
-$filme->settAnoLancamento (2022);
-$filme->settNome ('gente grande');
-$filme->settGenero ('terror');
+$filme1 = new Filme(
+    'gente grande',
+    2022,
+    'comedia',
+    [8.7, 7.6, 9.8, 8.3]
+);
 
-$filme->avalia (7.9);
-$filme->avalia (4.9);
-$filme->avalia (8.7);
-$filme->avalia (9);
+var_dump($filme1);
 
-var_dump($filme);
+echo "\n media filme: " . $filme1-> media() . "\n";
 
-echo "\n media filme: " . $filme -> media() . "\n";
-
-echo " esse e o ano laçamento: " . $filme -> getanoLancamento();
-echo "\n esse é o nome do filme: " . $filme -> getNome();
-echo "\n esse é o genero: " . $filme -> getGenero();
+echo " esse e o ano laçamento: " . $filme1 -> getanoLancamento();
+echo "\n esse é o nome do filme: " . $filme1-> getNome();
+echo "\n esse é o genero: " . $filme1-> getGenero();
 
 ?>

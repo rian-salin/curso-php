@@ -2,17 +2,20 @@
 
 class Filme {
 
-public string $nome = 'nome padrao';
-public int $anoLancamento = 2025;
-public string $genero = 'ação';
-private array $notas = [];
-private float $media = 0;
-private bool $atualizaMedia = false;
+    public function __construct(
+        public string $nome,
+        public int $anoLancamento,
+        public string $genero,
+        private array $notas = [],
+        private float $media = 0,
+        private bool $atualizaMedia = true
+    ) {}
+
 
 function avalia(float $nota): void
 {
-     $this ->notas[] = $nota;
-     $this ->atualizaMedia= true;
+     $this->notas[] = $nota;
+     $this->atualizaMedia= true;
 }
 
 function media ():float
