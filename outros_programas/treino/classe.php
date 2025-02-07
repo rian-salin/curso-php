@@ -4,9 +4,9 @@ class Aluno{
 
    public function __construct(
 
-    private  string $nome ,
-    private  int $idade,
-    private  string $serie
+    public readonly string $nome ,
+    public readonly int $idade,
+    public readonly  string $serie
 
  ){} 
 

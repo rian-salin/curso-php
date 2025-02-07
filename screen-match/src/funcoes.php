@@ -1,5 +1,15 @@
 <?php
 
+function ExibirPropriedades(Filme $filme)
+{
+    echo "Filme: {$filme->nome}\n";
+    echo "Ano de Lançamento: {$filme->anoLancamento}\n";
+    echo "Gênero: {$filme->genero->name}\n"; 
+}
+
+
+
+
 function exibeMensagemLancamento(int $ano): void {
     if ($ano > 2022) {
         echo "Esse filme é um lançamento\n";
@@ -17,7 +27,7 @@ function incluidoNoPlano(bool $planoPrime, int $anoLancamento): bool {
 function criaFilme(
     string $nome, 
     int $anoLancamento, 
-    string $genero, 
+    Genero $genero, 
     array $notas = [], 
     float $media = 0, 
     bool $atualizaMedia = true
