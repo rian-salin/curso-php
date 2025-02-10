@@ -1,6 +1,6 @@
 <?php
 
-function ExibirPropriedades(Filme $filme1)
+function ExibirPropriedades(Filme $filme1):void
 {
     echo "Filme: {$filme1->nome}\n";
     echo "Ano de Lançamento: {$filme1->anoLancamento}\n";
@@ -26,10 +26,10 @@ function criaFilme(
     string $nome, 
     int $anoLancamento, 
     Genero $genero, 
+    int $duracaoEmMinutos,
     array $notas = [], 
     float $media = 0, 
-    bool $atualizaMedia = true,
-    int $duracaoEmMinutos
+    bool $atualizaMedia = true
     ): Filme 
     {
     return new Filme($nome, $anoLancamento, $genero, $duracaoEmMinutos, $notas, $media, $atualizaMedia);
