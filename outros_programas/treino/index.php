@@ -8,7 +8,7 @@ require __DIR__ . "/funcao.php";
 
 echo "\nBem vindo(a) XD \n";
 
-$aluno1 = new Aluno(
+$aluno1 = criaAluno(
     'Rian',
     19,
     Sexo::Masculino,
@@ -16,8 +16,17 @@ $aluno1 = new Aluno(
     1294
 );
 
-exibemensagem($aluno1);
 
+$professor1 = new Professor(
+    'Maria',
+    29,
+    Sexo::Feminimo,
+    'bacharelado',
+    79887
+);
 
+$aluno1->exiberIdentidadeCompleta();
+
+$professor1->exiberIdentidadeCompleta();
 
 ?>

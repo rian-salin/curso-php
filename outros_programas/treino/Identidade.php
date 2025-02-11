@@ -10,7 +10,14 @@ class Identidade{
     
      ){} 
        
+
+public function exibirIdentidade():void{
+
+    echo "\n Seu nome: {$this->nome}, idade: {$this->idade} e o sexo é: {$this->sexo->name} \n";
+    
 }
 
+
+}
 
 ?>

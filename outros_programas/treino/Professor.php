@@ -13,5 +13,11 @@
             parent::__construct($nome, $idade, $sexo);
         }
 
+        public function exiberIdentidadeCompleta():void 
+        {   parent::exibirIdentidade();
+            echo" grau ensino é: {$this->grauEnsino}, e seu RG é: {$this->rg} \n";
+        }
+
+
     }
 ?>

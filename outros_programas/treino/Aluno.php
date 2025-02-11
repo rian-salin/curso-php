@@ -14,6 +14,14 @@ class Aluno extends Identidade {
       parent::__construct($nome, $idade, $sexo);
  } 
 
+   public function exiberIdentidadeCompleta():void 
+   {
+      parent::exibirIdentidade();
+      echo " serie é: {$this->serie}, e CPF: {$this->cpf} \n";
+   }
+
+
+
 }
 
 ?>
