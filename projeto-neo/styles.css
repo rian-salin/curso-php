@@ -7,6 +7,7 @@
 
 body {
     background-color: rgb(219, 219, 219);
+    height: 100vh; /*----------------------------------*/
 }
 
 header{
@@ -55,3 +56,62 @@ header{
     margin-right: 70px;
   }
   
+nav.menu-lateral{
+    width: 70px;
+    height: 100%;  /*------------------------------ */
+    background-color: white;
+    padding: 40px 0 40px 1px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+nav.menu-lateral:hover{
+    width: 200px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: black;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+}
+
+ul li.item-menu{
+    transition: .3s;
+}
+
+ul li.item-menu:hover{
+    background-color: darkcyan;
+}
+
+ul li.item-menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+}
+
+.txt-link{
+    margin-left: 30px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
