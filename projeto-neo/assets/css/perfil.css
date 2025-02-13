@@ -126,8 +126,69 @@ nav.menu-lateral .submenu{
     color: white;
 }
 
-h1{
-    color: red;
-    font-size: 40px;
-    margin-left: 200px;
+.local-pagina{
+    color: black;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+
+.cadastrar{
+    background-color: white;
+    justify-items: center;
+    width: 900px;
+    height: 130px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-top: 35px
+}
+
+.cadastrar form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row; 
+    gap: 30px; 
+    
+}
+
+.enviarCadastro{
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.enviarCadastro:hover{
+    transform: scale(1.1);
+}
+
+.cadastrados{
+    background-color: white;
+    justify-items: center;
+    width: 900px;
+    height: 250px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-top: 35px
+}
+
+.tabela-cadastrados{
+    width: 80%;
+   margin-top: 40px;
+  
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: start;
+}
+
+.controle{
+    text-align: center;
+}
+
+.titulos{
+    background-color: rgb(219, 219, 219);
 }

@@ -101,7 +101,44 @@
 
     </nav>
 
-    <h1>ola</h1>
+    <h2 class="local-pagina">Cadastro|Perfil</h2>
+
+    <div class="cadastrar">
+        <h3 class="um">Cadastro de Perfil</h3>
+        <form action="#" method="post">
+            <!-- Campo Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <!-- Campo Descrição -->
+            <label for="nome">Descrição do Perfil:</label>
+            <input type="text" id="descrição" name="descrição" placeholder="Descreva ..." required>
+
+            <!-- Botão de Enviar -->
+            <button class="enviarCadastro" type="submit">Salvar</button>
+        </form>
+    </div>
+
+
+    <div class="cadastrados">
+        <h3>Perfis Cadastrados</h3>
+        <table class="tabela-cadastrados">
+            <tr class="titulos">
+                <th>Nome do perfil</th>
+                <th>Descrição do perfil</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>Nome do perfil</td>
+                <td>Descrição do perfil</td>
+                <td class="controle"><i class="bi bi-ban"></i>
+                    <i class="bi bi-pencil"></i>
+                    <i class="bi bi-gear-wide"></i>
+                </td>
+            </tr>
+        </table>
+    </div>    
+    
 
 
 
