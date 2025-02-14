@@ -128,8 +128,8 @@ nav.menu-lateral .submenu{
 
 .local-pagina{
     color: black;
-    margin-left: 250px;
-    margin-top: 40px;
+    margin-left: 450px;
+    margin-top: 80px;
 }
 
 .cadastrar{
@@ -139,7 +139,7 @@ nav.menu-lateral .submenu{
     height: 130px;
     padding: 10px 15px;
     border-radius: 20px;
-    margin-left: 250px;
+    margin-left: 450px;
     margin-top: 35px
 }
 
@@ -154,7 +154,7 @@ nav.menu-lateral .submenu{
 .enviarCadastro{
     background-color: black;
     color: white;
-    width: 100px;
+    width: 150px;
     border-radius: 10px;
 }
 
@@ -169,14 +169,14 @@ nav.menu-lateral .submenu{
     height: 250px;
     padding: 10px 15px;
     border-radius: 20px;
-    margin-left: 250px;
+    margin-left: 450px;
     margin-top: 35px
 }
 
 .tabela-cadastrados{
-    width: 80%;
-   margin-top: 40px;
-  
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 38px;
 }
 
 td, th {
