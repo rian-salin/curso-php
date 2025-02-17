@@ -1,34 +1,27 @@
-body{
-    background-color: #000000 ;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-h1{
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000 ;
     color: #F6F6F6;
 }
 
-span{
+.destaque-titulo{
     color: #22D4FD;
 }
 
-p{
-    color: #F6F6F6
-}
-
-.link{
-    text-decoration: none;
-    color: #000000;
-    background-color: #22D4FD ;
-    border-radius: 16px;
-    padding: 16px;
-    
-}
-
-main{
+.apresentacao{
     display: flex;
-
+    align-items: center;
+    justify-content: space-around;
+    margin: 10%;
 }
 
-.foto{
-    width: 100px;
-    height: 120px;
+img{
+    width: 300px;
+    height: 400px;
 }
