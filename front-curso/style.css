@@ -6,7 +6,6 @@
 }
 
 body{
-    height: 100vh;
     box-sizing: border-box;
     background-color: #000000 ;
     color: #F6F6F6;
@@ -20,12 +19,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 10% 15%;
+    padding:  8%;
 }
 
-img{
-    width: 488px;
-    height: 550px;
+.foto-menina{
+    width: 680px;
+    height: 756px;
 }
 
 section{
@@ -47,21 +46,66 @@ p{
 
 .botoes{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
 }
 
 .botoes a {
-    background-color: #22D4FD;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: #000000;
     text-decoration: none;
-    width: 280px;
-    border-radius: 16px;
+    width: 378px;
+    border-radius: 8px;
     text-align: center;
-    color: #000000;
+    color: #F6F6F6;
     font-family: "Montserrat", serif;
     padding: 21.5px 0px;
+    border: 2px solid #22D4FD;
+    font-size: 24px;
 }
 
 .botoes a:hover{
-    background-color: white;
-    transition: .5s;
+    background-color: #272727;
+    scale: 1.1;
+    transition: .2s;
+}
+
+h2{
+    font-family: "Krona One", serif;
+}
+
+.rodape{
+    background-color: #22D4FD ;
+    color: #000000;
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+}
+
+.cabecalho-menu-link{
+    font-size: 18px;
+    color:#F6F6F6;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+}
+
+.cabecalho-menu-link:hover {
+    color: #007bff;
+    transform: .3s;
+    scale: 1.1;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.cabecalho{
+    background-color:#000000;
+    padding: 24px;
 }
