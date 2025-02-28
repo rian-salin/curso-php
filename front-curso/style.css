@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --cor-primaria:#2C3930;
+    --cor-secundaria:#DCD7C9;
+    --cor-terciaria:#A27B5C; 
+    --cor-hover:#3F4F44;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +14,19 @@
 
 body{
     box-sizing: border-box;
-    background-color: #000000 ;
-    color: #F6F6F6;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .destaque-titulo{
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding:  4% 8%;
+    padding: 4% 8%;
 }
 
 .foto-menina{
@@ -55,20 +62,20 @@ p{
     display: flex;
     justify-content: center;
     gap: 16px;
-    background-color: #000000;
+    background-color: var(--cor-primaria);
     text-decoration: none;
     width: 378px;
     border-radius: 8px;
     text-align: center;
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
     font-family: "Montserrat", serif;
     padding: 21.5px 0px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
     font-size: 24px;
 }
 
 .botoes a:hover{
-    background-color: #272727;
+    background-color:var(--cor-hover);
     scale: 1.1;
     transition: .2s;
 }
@@ -78,23 +85,23 @@ h2{
 }
 
 .rodape{
-    background-color: #22D4FD ;
-    color: #000000;
-    padding: 24px;
-    text-align: center;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 24px;    
+    text-align: center;      
     font-family: "Montserrat", serif;
     font-size: 24px;
 }
 
 .cabecalho-menu-link{
     font-size: 18px;
-    color:#F6F6F6;
+    color: var(--cor-secundaria);
     text-decoration: none;
     font-family: "Montserrat", serif;
-}
+}  
 
 .cabecalho-menu-link:hover {
-    color: #007bff;
+    color: var(--cor-terciaria);
     transform: .3s;
     scale: 1.1;
 }
@@ -106,7 +113,7 @@ h2{
 }
 
 .cabecalho{
-    background-color:#000000;
+    background-color: var(--cor-primaria);
     padding: 24px;
 }
 
@@ -116,9 +123,8 @@ h2{
 .sobre-mim{
     display: flex;
     flex-direction: column;
-    padding: 6% 18%;
+    padding: 6% 10%;
     gap: 120px;
-   
 }
 
 .texto-sobre{
@@ -147,19 +153,17 @@ h2{
 .linha1{
     display: flex;
     gap: 95px;
-    
 }
 
 .linha2{
     display: flex;
     gap: 95px;
-    
 }
 
 .habilidade{
     width: 300px;
     height: 400px;
-    border: 1px solid #22D4FD ;
+    border: 1px solid var(--cor-terciaria);
 }
 
 .habilidade:hover{
